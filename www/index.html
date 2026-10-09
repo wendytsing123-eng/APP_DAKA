@@ -43,6 +43,35 @@ body{margin:0;background:var(--bg);color:var(--tx);font:16px -apple-system,"Ping
 .ic2 b{font-size:19px;display:block}.ic2 small{color:var(--sub);font-size:14px}
 .emo{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.emo button{font-size:24px;width:44px;height:44px;border-radius:12px;border:2px solid transparent;background:var(--sf)}.emo button.on{border-color:var(--ac)}
 .title{width:26%!important}
+.tnode{position:absolute;border:2px solid;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;cursor:pointer;line-height:1.15;padding:0 3px;white-space:nowrap}
+.tnode b{font-weight:700;overflow:hidden;text-overflow:ellipsis;max-width:100%}.tnode span{opacity:.85}
+.troot{position:absolute;display:flex;align-items:center;justify-content:center;font-size:24px;width:44px;height:44px;border-radius:50%;background:var(--card);border:2px solid #8d6e4a}
+.tplus{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--ac);color:#fff;font-size:15px;font-weight:700;line-height:17px;text-align:center;cursor:pointer;box-shadow:0 1px 3px #0004}
+.nav2{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom,0px));width:min(94%,540px);display:flex;gap:2px;background:var(--card);border-radius:30px;box-shadow:0 4px 18px #0003;padding:5px;z-index:5}
+.nav2 button{flex:1;border:0;background:none;color:var(--sub);font-size:11px;padding:6px 0;border-radius:24px;font-family:inherit;display:flex;flex-direction:column;align-items:center;gap:2px}.nav2 button span{font-size:20px}.nav2 button.on{background:var(--sf);color:var(--tx)}
+.gcard{background:var(--card);border-radius:16px;padding:14px;margin:8px 0;cursor:pointer}
+.chip{display:inline-block;font-size:12px;border-radius:10px;padding:2px 8px;margin:6px 6px 0 0;background:var(--sf);color:var(--sub)}
+.agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ach{display:flex;flex-direction:column;align-items:center;text-align:center;padding:10px 2px 8px;border-radius:14px;background:var(--card);cursor:pointer;min-height:98px}
+.ach small{font-size:11px;line-height:1.2;margin-top:4px;max-height:27px;overflow:hidden}
+.panel input[type=checkbox]{width:20px;height:20px;padding:0;vertical-align:middle;margin-right:6px}
+.dcard{background:var(--card);border-radius:20px;padding:14px 16px;margin:10px 0}.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.dh b{font-size:17px}.dh span{color:var(--sub);font-size:13px;cursor:pointer}
+.bar{background:var(--sf);border-radius:6px;height:7px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac);border-radius:6px}
+.drow{display:flex;align-items:center;gap:10px;margin:12px 0}.dic{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;overflow:hidden;background:color-mix(in srgb,var(--ac) 20%,transparent);flex:none}
+.dq{width:34px;height:34px;border-radius:50%;border:0;background:var(--sf);color:var(--tx);font-size:22px;flex:none}
+.big2{font-size:28px;font-weight:700}.sm{color:var(--sub);font-size:12px}.cnt4{display:flex;justify-content:space-around;text-align:center}.cnt4 b{font-size:22px;display:block}
+.nav2 button{font-size:10px}.nav2 button span{font-size:19px}
+.tb{display:flex;flex-direction:column;align-items:center;margin:22px 0 30px}
+.tn,.sk{border-radius:18px;text-align:center;padding:12px 16px;cursor:pointer;border:2px solid #8884;min-width:84px}
+.tn{font-size:15px;padding:14px 22px}.tn .e{font-size:30px;display:block}.tn b{font-size:19px}
+.tn small,.sk small{display:block;font-size:12px;opacity:.75}
+.stem{width:3px;height:18px;border-radius:2px}
+.row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding-top:0;width:100%}
+.sk{position:relative;margin-top:18px}.sk::before{content:'';position:absolute;top:-20px;left:50%;margin-left:-1.5px;width:3px;height:20px;background:var(--lc,#8886);border-radius:2px}
+.sk b{display:block;font-size:16px}.sk .st{letter-spacing:1px;font-size:13px}
+.seg5{display:flex;gap:3px;justify-content:center;margin-top:5px}.seg5 i{width:12px;height:5px;border-radius:3px;background:#8886}.seg5 i.f{background:var(--ac)}
+.full{animation:gl 2.4s ease-in-out infinite}@keyframes gl{50%{box-shadow:0 0 26px var(--ac)}}
+.lit5{display:inline-block;margin-top:3px;font-size:12px;font-weight:700}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 4px}.chips button{border:0;border-radius:22px;padding:10px 18px;font-size:16px;background:var(--card);color:var(--tx);white-space:nowrap;font-family:inherit}.chips button.on{background:var(--tx);color:var(--bg)}
 .gt{margin:16px 2px 6px;color:var(--sub);font-size:14px;font-weight:600}.panel select{width:100%;padding:11px;border-radius:10px;border:1px solid #8884;background:var(--sf);color:var(--tx);font-size:16px}
 .ipv{width:72px;height:72px;border-radius:20px;background:color-mix(in srgb,var(--ac) 20%,transparent);display:flex;align-items:center;justify-content:center;font-size:40px;overflow:hidden;margin:4px 0}.ipv img,.ic2 .em img{width:100%;height:100%;object-fit:cover}.ic2 .em{overflow:hidden}.panel{max-height:92vh;overflow:auto}
@@ -60,8 +89,14 @@ body{margin:0;background:var(--bg);color:var(--tx);font:16px -apple-system,"Ping
 .btn{width:100%;margin-top:16px;padding:13px;border:0;border-radius:12px;background:var(--ac);color:#fff;font-size:17px}
 .btn.g{background:var(--sf);color:var(--tx);margin-top:8px}
 .empty{text-align:center;color:var(--sub);padding:30px}
-</style></head><body>
-<div id="home"><div class="hd"><h1>DAKA</h1><span><button class="ic" id="gear">⚙</button><button class="ic" id="addItem">＋</button></span></div><div class="pad"><div class="chips" id="chips"></div><div id="items"></div></div></div>
+body{padding-bottom:110px}</style></head><body>
+<div id="dash"><div class="hd"><h1>DAKA</h1><span><button class="ic" id="dEdit" style="font-size:20px">✎</button><button class="ic" id="dGear">⚙</button></span></div><div class="pad" id="dbody"></div></div>
+<div id="home" style="display:none"><div class="hd"><h1>DAKA</h1><span><button class="ic" id="gear">⚙</button><button class="ic" id="addItem">＋</button></span></div><div class="pad"><div class="chips" id="chips"></div><div id="items"></div></div></div>
+<div id="tree" style="display:none"><div class="hd"><span style="display:flex;align-items:center"><button class="ic" id="tback">‹</button><h1 style="font-size:26px;margin-left:4px">我的技能树</h1></span><button class="ic" id="addRoot" style="font-size:18px">＋ 主系</button></div><div class="pad" id="tbody"></div></div>
+<div id="life" style="display:none"><div class="hd"><h1 style="font-size:28px">人生进度</h1><span><button class="ic" id="lBirth" style="font-size:20px">🎂</button><button class="ic" id="lAdd" style="font-size:17px">＋ 事件</button></span></div><div class="pad" id="lbody"></div></div>
+<div id="goals" style="display:none"><div class="hd"><h1 style="font-size:28px">人生目标</h1><button class="ic" id="gAdd" style="font-size:17px">＋ 目标</button></div><div class="pad" id="gbody"></div></div>
+<div id="wall" style="display:none"><div class="hd"><h1 style="font-size:28px">成就墙</h1></div><div class="pad" id="wbody"></div></div>
+<div class="nav2" id="nav2"><button data-v="dash" class="on"><span>📊</span>总览</button><button data-v="home"><span>🏠</span>打卡</button><button data-v="tree"><span>🌳</span>技能树</button><button data-v="life"><span>⏳</span>人生</button><button data-v="goals"><span>🎯</span>目标</button><button data-v="wall"><span>🏆</span>成就</button></div>
 <div id="det" style="display:none">
 <div class="top">
  <button class="ic" id="back">‹</button><input class="title" id="name" value="舞蹈课" maxlength="12">
@@ -104,33 +139,104 @@ const wd=d=>(d.getDay()+6)%7;
 function applyPrefs(){const r=document.documentElement;S.theme?r.setAttribute('data-theme',S.theme):r.removeAttribute('data-theme');r.style.setProperty('--ac',S.color||'#f2b000')}
 applyPrefs();try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
 $('name').onchange=e=>{curItem().name=e.target.value||'打卡';save()};
-let cur=null,view='home',inDet=false;
+let cur=null,view='dash',inDet=false;
 const R=()=>S.recs.filter(r=>r.item==cur);
 const curItem=()=>S.items.find(i=>i.id==cur);
-function migrate(){if(!S.cats)S.cats=['技能类','体验类','财富类'];if(!S.items){S.items=[{id:1,name:S.name||'舞蹈课',icon:'💃'}];S.recs.forEach(r=>r.item=1)}}
+function migrate(){if(!S.items){S.items=[{id:1,name:S.name||'舞蹈课',icon:'💃'}];S.recs.forEach(r=>r.item=1)}migrateTree();S.life=S.life||{birth:'',events:[]};S.life.events=S.life.events||[];S.lgoals=S.lgoals||[];S.lcats=S.lcats||['事业','家庭','健康','财富','成长','体验'];S.ach=S.ach||{};S.ltypes=S.ltypes||['一次性','累计','感受类','成就类']}
 migrate();
 const total=id=>S.recs.filter(r=>r.item==id).reduce((a,r)=>a+r.n,0);
 const starsOf=it=>(it.goals||[]).filter(g=>total(it.id)>=g).length;
 function starHtml(i){const g=i.goals||[];if(!g.length)return`<small data-g="${i.id}" style="display:block;color:var(--ac);margin:3px 0">＋ 设置星级目标</small>`;const t=total(i.id),k=starsOf(i),nx=g.find(x=>t<x);
  return`<div style="margin:3px 0;font-size:17px;letter-spacing:1px">${g.map((x,j)=>`<span style="color:${j<k?'var(--ac)':'#8886'}">★</span>`).join('')}</div><small style="display:block;margin-bottom:2px">累计 ${t}${nx?' / '+nx:' · 已满星'}</small>`}
 function ago(ts){const d=new Date(ts),n=Math.round((sod(new Date())-sod(d))/864e5),t=p2(d.getHours())+':'+p2(d.getMinutes());return n<=0?'今天 '+t:n==1?'昨天 '+t:n+'天前'}
-function go(){inDet=view=='det';$('home').style.display=inDet?'none':'';$('det').style.display=inDet?'':'none';$('fab').style.display=inDet?'':'none';if(inDet)sel();else renderHome()}
+let backTo='home';
+function go(){inDet=view=='det';['dash','home','tree','life','goals','wall'].forEach(v=>$(v).style.display=view==v?'':'none');$('det').style.display=inDet?'':'none';$('fab').style.display=inDet?'':'none';$('nav2').style.display=inDet?'none':'';document.querySelectorAll('#nav2 button').forEach(b=>b.classList.toggle('on',b.dataset.v==view));if(inDet)sel();else render()}
+function migrateTree(){
+ if(S.tree)return;
+ S.tree=[['body','💪','体魄'],['mind','🧠','认知'],['know','📚','学识'],['career','⚔️','事业'],['express','🗣️','表达'],['craft','🛠️','技艺']].map(([k,e,n])=>({id:'r_'+k,name:n,emoji:e,parent:null}));
+ S.items.forEach(i=>{if(i.sys&&S.tree.some(n=>n.id=='r_'+i.sys)){let p='r_'+i.sys;
+  [i.skill,i.sub].forEach(nm=>{if(!nm)return;let f=S.tree.find(n=>n.parent==p&&n.name==nm);if(!f){f={id:'n'+Date.now()+Math.random().toString(36).slice(2,6),name:nm,parent:p};S.tree.push(f)}p=f.id});
+  i.node=p}})}
+const kids=id=>S.tree.filter(n=>(n.parent||null)==id),roots=()=>kids(null),nodeById=id=>S.tree.find(n=>n.id==id);
+function rootOf(id){let n=nodeById(id);while(n&&n.parent)n=nodeById(n.parent);return n}
+function desc(id){const o=[id];kids(id).forEach(k=>o.push(...desc(k.id)));return o}
+const itemsUnder=id=>{const d=desc(id);return S.items.filter(i=>d.includes(i.node))};
+function prog(list){const g=list.filter(i=>(i.goals||[]).length);if(!g.length)return{pct:0,k:0,n:0,has:false};
+ const pct=g.reduce((a,i)=>a+Math.min(1,total(i.id)/i.goals[i.goals.length-1]),0)/g.length;
+ const ratio=g.reduce((a,i)=>a+starsOf(i)/i.goals.length,0)/g.length;
+ return{pct:Math.floor(pct*100+1e-9),k:Math.min(5,Math.floor(ratio*5+1e-9)),n:g.length,has:true}}
+function enterItem(id,from){cur=id;view='det';backTo=from;tab=1;mode='month';off=0;const t=new Date();cm=new Date(t.getFullYear(),t.getMonth(),1);$('name').value=curItem().name;close();go()}
+const LV=[[0,.55],[14,.8],[26,.9],[40,1],[58,1],[80,1]];
+function nodeStyle(k){const[p,o]=LV[k];return`background:color-mix(in srgb,var(--ac) ${p}%,var(--card));opacity:${o};color:${k>=4?'#222':'var(--tx)'};border-color:${k?'var(--ac)':'#8884'};${k>=3?`box-shadow:0 0 ${k*4}px var(--ac);`:''}`}
+const starStr=k=>'★'.repeat(k)+'☆'.repeat(5-k);
+function nodeForm(title,name0,emoji0,showEmoji,ok){
+ const E=['💪','🧠','📚','⚔️','🗣️','🛠️','🎨','💰','❤️','🌿','🎵','🧘'];let em=emoji0||'';
+ open(`<h3 style="margin:0">${title}</h3><label>名称</label><input id="nf_n" maxlength="12" value="${name0}" placeholder="例如：英语、口语">
+ ${showEmoji?`<label>图标：点选，或点下面输入框用输入法的表情</label><div class="emo">${E.map(e=>`<button data-ne="${e}" class="${e==em?'on':''}">${e}</button>`).join('')}</div><input id="nf_e" value="${em}" placeholder="😀" style="margin-top:8px">`:''}
+ <button class="btn" id="nf_ok">保存</button>`);
+ document.querySelectorAll('[data-ne]').forEach(b=>b.onclick=()=>{em=b.dataset.ne;$('nf_e').value=em;document.querySelectorAll('[data-ne]').forEach(x=>x.classList.toggle('on',x==b))});
+ if(showEmoji)$('nf_e').oninput=e=>{const x=firstEmoji(e.target.value);if(x)em=x};
+ $('nf_ok').onclick=()=>{const n=$('nf_n').value.trim();if(!n){alert('请输入名称');return}ok(n,em)}}
+function nodeSheet(id){
+ const n=nodeById(id),its=itemsUnder(id),pr=prog(its),pc=pr.has?pr.pct:0;
+ open(`<h3 style="margin:0">${n.emoji||''} ${n.name}</h3>
+ <div style="margin:10px 0 6px;color:var(--sub)">进度 <b style="color:var(--tx);font-size:20px">${pr.has?pr.pct+'%':'未设目标'}</b> · 整体星级 <span style="color:var(--ac);font-size:18px">${starStr(pr.k)}</span></div>
+ <div style="background:var(--sf);border-radius:6px;height:10px;overflow:hidden"><div style="height:100%;width:${pc}%;background:var(--ac)"></div></div>
+ <label>这一枝上的目标（${its.length}）</label>
+ ${its.map(i=>{const k=starsOf(i),t=total(i.id),nx=(i.goals||[]).find(x=>t<x),nd=nodeById(i.node);return`<div class="item" data-go="${i.id}"><span>${isImg(i.icon)?'🖼️':i.icon} ${i.name}${i.node!=id&&nd?` <small style="color:var(--sub)">· ${nd.name}</small>`:''}</span><i>${(i.goals||[]).length?starStr(k)+' '+t+(nx?'/'+nx:''):'未设星级目标'}</i></div>`}).join('')||'<div class="empty" style="padding:12px">还没有目标挂在这里</div>'}
+ <button class="btn" id="nd_g">＋ 在这里新建目标</button><button class="btn g" id="nd_c">＋ 添加子分支</button>
+ <div style="display:flex;gap:8px"><button class="btn g" id="nd_e">改名${n.parent?'':' / 图标'}</button><button class="btn g" id="nd_d" style="color:#e5484d">删除</button></div>`);
+ document.querySelectorAll('[data-go]').forEach(el=>el.onclick=()=>enterItem(+el.dataset.go,'tree'));
+ $('nd_g').onclick=()=>iconSheet('新建打卡项目','','','创建',(nm,ic,g,nd,ac)=>{S.items.push({id:Date.now(),name:nm,icon:ic,goals:g,node:nd,ach:ac});save();syncAch(false);close();renderTree()},undefined,id);
+ $('nd_c').onclick=()=>nodeForm('在「'+n.name+'」下添加分支','','',false,nm=>{S.tree.push({id:'n'+Date.now(),name:nm,parent:id});save();close();renderTree()});
+ $('nd_e').onclick=()=>nodeForm('修改',n.name,n.emoji||'',!n.parent,(nm,e)=>{n.name=nm;if(!n.parent)n.emoji=e||n.emoji;save();close();renderTree()});
+ $('nd_d').onclick=()=>{const d=desc(id),c=d.length-1;if(!confirm('删除“'+n.name+'”'+(c?'及其下 '+c+' 个分支':'')+'？挂在上面的目标不会删除，只是不再属于技能树。'))return;S.tree=S.tree.filter(x=>!d.includes(x.id));S.items.forEach(i=>{if(d.includes(i.node))i.node=''});save();close();renderTree()}}
+function renderTree(){
+ migrate();
+ const RW=60,CW=78,GP=26,RH=46,TOP=64,GAP=18,TX=26,BR='#8d6e4a';
+ const colX=d=>d==0?30:30+RW+GP+(d-1)*(CW+GP),wd=d=>d?CW:RW;
+ const rs=roots();
+ if(!rs.length){$('tbody').innerHTML='<div class="empty">树上还没有主系 🌱<br><br>点右上角「＋ 主系」种下第一根主干。</div>';return}
+ const rowsOf=n=>{const c=kids(n.id);return c.length?c.reduce((a,k)=>a+rowsOf(k),0):1};
+ let N='',L='',maxD=0,firstY=null,y=TOP,nodesN=0,litN=0;
+ const link=(x1,y1,x2,y2,k,wd)=>{const m=(x1+x2)/2;return`<path d="M${x1},${y1} C${m},${y1} ${m},${y2} ${x2},${y2}" fill="none" stroke="${k?'var(--ac)':BR}" stroke-width="${wd}" stroke-linecap="round" opacity="${k?1:.65}"/>`};
+ function draw(n,d,y0){
+  const rows=rowsOf(n),cy=y0+rows*RH/2,pr=prog(itemsUnder(n.id)),k=pr.k,x=colX(d),w=wd(d),h=d?36:60;
+  maxD=Math.max(maxD,d);nodesN++;if(k)litN++;
+  const full=pr.has&&pr.pct>=100;
+  const lab=!pr.has?'未设目标':(full?'✨ 100%':pr.pct+'% '+'★'.repeat(k));
+  const inner=d?`<b style="font-size:13px">${n.name}</b><span style="font-size:10px">${lab}</span>`:`<span style="font-size:20px;opacity:1">${n.emoji||'🌿'}</span><b style="font-size:12px">${n.name}</b><span style="font-size:10px">${pr.has?pr.pct+'%':'未设目标'}</span>`;
+  N+=`<div class="tnode ${full?'full':''}" data-nd="${n.id}" style="left:${x}px;top:${cy-h/2}px;width:${w}px;height:${h}px;${nodeStyle(k)}">${inner}</div><div class="tplus" data-add="${n.id}" style="left:${x+w-10}px;top:${cy+h/2-9}px">+</div>`;
+  let cr=0;
+  kids(n.id).forEach(c=>{const r=rowsOf(c),ccy=y0+(cr+r/2)*RH,ck=prog(itemsUnder(c.id)).k;L+=link(x+w,cy,colX(d+1),ccy,ck,d?3:4);draw(c,d+1,y0+cr*RH);cr+=r});
+  return cy}
+ rs.forEach(r=>{const rows=rowsOf(r),hb=Math.max(rows*RH,66),cy=draw(r,0,y+(hb-rows*RH)/2);if(firstY==null)firstY=cy;L+=link(TX,cy,30,cy,prog(itemsUnder(r.id)).k,6);y+=hb+GAP});
+ const W=colX(maxD)+wd(maxD)+14,H=y+56,rootY=H-30;
+ const trunk=`<path d="M${TX},${rootY} L${TX},${firstY-10}" stroke="${BR}" stroke-width="10" stroke-linecap="round" fill="none"/><text x="${TX}" y="${firstY-36}" font-size="30" text-anchor="middle">🌳</text>`;
+ const all=S.items.filter(i=>i.node&&nodeById(i.node)),P=prog(all);
+ $('tbody').innerHTML=`<div class="card" style="margin:6px 0 10px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><span style="font-size:30px;font-weight:700">${P.has?P.pct+'%':'--'}</span><span style="color:var(--sub);margin-left:6px">整体进度</span></div><div style="font-size:20px;color:var(--ac)">${starStr(P.k)}</div></div><div style="background:var(--sf);border-radius:6px;height:8px;overflow:hidden;margin-top:8px"><div style="height:100%;width:${P.pct}%;background:var(--ac)"></div></div><div style="color:var(--sub);font-size:13px;margin-top:6px">${rs.length} 个主系 · ${nodesN} 个节点 · 已点亮 ${litN} · ${all.length} 个目标${P.has?'':'（给目标设置星级目标后显示进度）'}</div></div><div style="overflow-x:auto"><div id="tw" style="position:relative;width:${W}px;height:${H}px;margin:0 auto"><svg width="${W}" height="${H}" style="position:absolute;left:0;top:0">${trunk}${L}</svg>${N}<div class="troot" style="left:${TX-22}px;top:${rootY-12}px">🌱</div></div></div>`;
+ const z=Math.min(1.4,Math.max(.6,(Math.min(window.innerWidth,560)-32)/W));$('tw').style.zoom=z;
+ const at=(x,f)=>document.querySelectorAll('['+x+']').forEach(el=>el.onclick=()=>f(el.getAttribute(x)));
+ at('data-nd',nodeSheet);
+ at('data-add',id=>{const n=nodeById(id);nodeForm('在「'+n.name+'」下添加分支','','',false,nm=>{S.tree.push({id:'n'+Date.now(),name:nm,parent:id});save();close();renderTree()})})}
+$('addRoot').onclick=()=>nodeForm('新增主系','','🌿',true,(n,e)=>{S.tree.push({id:'n'+Date.now(),name:n,emoji:e||'🌿',parent:null});save();close();renderTree()});
 function cardHtml(i){const last=Math.max(0,...S.recs.filter(r=>r.item==i.id).map(r=>r.ts));
  return`<div class="ic2" data-i="${i.id}"><div class="r"><span class="em">${isImg(i.icon)?`<img src="${i.icon}">`:i.icon}</span><button class="plus" data-p="${i.id}">+</button></div><div><b>${i.name}</b>${starHtml(i)}<small>上次：${last?ago(last):'暂无'}</small></div></div>`}
 const SORTS={new:['创建：先 → 后',(a,b)=>a.i.id-b.i.id],newD:['创建：后 → 先',(a,b)=>b.i.id-a.i.id],last:['最近打卡优先',(a,b)=>b.last-a.last],lastO:['最久未打卡优先',(a,b)=>a.last-b.last],name:['名称 A → Z',(a,b)=>a.i.name.localeCompare(b.i.name,'zh')],totD:['累计数量：多 → 少',(a,b)=>b.t-a.t],totA:['累计数量：少 → 多',(a,b)=>a.t-b.t],starD:['星级：高 → 低',(a,b)=>b.k-a.k||b.t-a.t],starA:['星级：低 → 高',(a,b)=>a.k-b.k||a.t-b.t]};
-const GROUPS={none:'不分组',cat:'按分类',star:'按完成星级',lit:'按是否点亮'};
+const GROUPS={none:'不分组',root:'按主系',star:'按完成星级',lit:'按是否点亮'};
 function renderHome(){
  migrate();
- const catsUsed=S.cats.filter(c=>S.items.some(i=>i.cat==c)),hasNone=S.items.some(i=>!i.cat);
- let fc=S.fcat||'ALL';if(fc!='ALL'&&fc!='__none'&&!catsUsed.includes(fc))fc='ALL';
- const chips=catsUsed.length?[['ALL','所有'],...catsUsed.map(c=>[c,c]),...(hasNone?[['__none','未分类']]:[])]:[];
+ const rid=i=>{const r=i.node&&rootOf(i.node);return r?r.id:''};
+ const rts=roots().filter(r=>S.items.some(i=>rid(i)==r.id)),hasNone=S.items.some(i=>!rid(i));
+ let fc=S.fcat||'ALL';if(fc!='ALL'&&fc!='__none'&&!rts.some(r=>r.id==fc))fc='ALL';
+ const chips=rts.length?[['ALL','所有'],...rts.map(r=>[r.id,(r.emoji||'')+r.name]),...(hasNone?[['__none','未加入技能树']]:[])]:[];
  $('chips').innerHTML=chips.map(([v,t])=>`<button data-f="${v}" class="${v==fc?'on':''}">${t}</button>`).join('');
  document.querySelectorAll('#chips button').forEach(b=>b.onclick=()=>{S.fcat=b.dataset.f;save();renderHome()});
- let L=S.items.filter(i=>fc=='ALL'||(fc=='__none'?!i.cat:i.cat==fc)).map(i=>({i,t:total(i.id),k:starsOf(i),last:Math.max(0,...S.recs.filter(r=>r.item==i.id).map(r=>r.ts))}));
+ let L=S.items.filter(i=>fc=='ALL'||(fc=='__none'?!rid(i):rid(i)==fc)).map(i=>({i,t:total(i.id),k:starsOf(i),last:Math.max(0,...S.recs.filter(r=>r.item==i.id).map(r=>r.ts))}));
  L.sort((SORTS[S.sort]||SORTS.new)[1]);
- const gm=S.group||'none';let groups=[];
+ const gm=S.group=='cat'?'root':(S.group||'none');let groups=[];
  if(gm=='none')groups=[['',L]];
- else if(gm=='cat'){[...S.cats,''].forEach(c=>groups.push([c||'未分类',L.filter(x=>(x.i.cat||'')==c)]))}
+ else if(gm=='root'){roots().forEach(r=>groups.push([(r.emoji||'')+r.name,L.filter(x=>rid(x.i)==r.id)]));groups.push(['未加入技能树',L.filter(x=>!rid(x.i))])}
  else if(gm=='star'){for(let k=5;k>=0;k--)groups.push([k?'★ '+k+' 星':'0 星 / 未设目标',L.filter(x=>x.k==k)])}
  else groups=[['已点亮（≥1 星）',L.filter(x=>x.k>=1)],['未点亮',L.filter(x=>x.k<1)]];
  groups=groups.filter(g=>g[1].length);
@@ -138,17 +244,22 @@ function renderHome(){
  document.querySelectorAll('.ic2').forEach(el=>el.onclick=e=>{
   if(e.target.dataset.g){editItem(+e.target.dataset.g);return}
   if(e.target.dataset.p){cur=+e.target.dataset.p;openEdit(0);return}
-  cur=+el.dataset.i;view='det';tab=1;mode='month';off=0;const t=new Date();cm=new Date(t.getFullYear(),t.getMonth(),1);$('name').value=curItem().name;go()})}
-$('back').onclick=()=>{view='home';go()};
+  enterItem(+el.dataset.i,'home')})}
+
+$('back').onclick=()=>{view=backTo;go()};
+$('tback').onclick=()=>{view='home';go()};
 const isImg=x=>typeof x=='string'&&x.startsWith('data:');
 function firstEmoji(v){v=v.trim();if(!v)return'';try{return[...new Intl.Segmenter().segment(v)][0].segment}catch(e){return Array.from(v)[0]}}
-function iconSheet(title,name0,icon0,okTxt,done,goals0,cat0){
- migrate();let cat=cat0||'';
+function iconSheet(title,name0,icon0,okTxt,done,goals0,node0,ach0){
+ migrate();
  const em=['💃','📚','🏃','🧘','🎵','🏋️','🍎','💧','🛌','✍️','🎨','🌳'];let pick=icon0||em[0];
  const prev=()=>{$('ipv').innerHTML=isImg(pick)?`<img src="${pick}">`:pick};
- open(`<h3 style="margin:0">${title}</h3><label>名称</label><input id="in_n" maxlength="12" value="${name0}" placeholder="例如：英语跟读打卡">
- <label>分类</label><div class="emo" id="cats">${['',...S.cats].map(c=>`<button data-ct="${c}" style="font-size:15px;width:auto;padding:0 14px" class="${c==cat?'on':''}">${c||'未分类'}</button>`).join('')}</div><input id="in_cat" placeholder="或输入新分类，例如：健康类" style="margin-top:8px">
- <label>星级目标：累计数量，空格隔开，最多5个（可不填）</label><input id="in_g" value="${(goals0||[]).join(' ')}" placeholder="例如 200 500 1000 1500 2000">
+ const opts=[];const walk=(p,dp)=>S.tree.filter(n=>(n.parent||null)==p).forEach(n=>{opts.push([n.id,'　'.repeat(dp)+(dp?'└ ':'')+(n.emoji||'')+n.name]);walk(n.id,dp+1)});walk(null,0);
+ open(`<h3 style="margin:0">${title}</h3><label>名称</label><input id="in_n" maxlength="12" value="${name0}" placeholder="例如：英语口语练习">
+ <label>技能树位置（让这个目标长在技能树的哪一枝，可不选；没有合适的枝可先去技能树里点 + 添加）</label><select id="in_nd"><option value="">不加入技能树</option>${opts.map(([v,t])=>`<option value="${v}" ${v==node0?'selected':''}>${t}</option>`).join('')}</select>
+ <label>星级目标：累计数量，空格隔开，最多5个（技能树进度按它计算）</label><input id="in_g" value="${(goals0||[]).join(' ')}" placeholder="例如 200 500 1000 1500 2000">
+ <label><input type="checkbox" id="in_ac" ${ach0&&ach0.on?'checked':''}> 把每档星级目标同时设为成就（显示在成就墙）</label>
+ <input id="in_at" value="${((ach0&&ach0.tiers)||[]).join(' ')}" placeholder="各档成就星级1-5，与目标一一对应，如 1 2 5；不填自动分配">
  <label>图标</label><div class="ipv" id="ipv"></div>
  <div class="emo">${em.map(e=>`<button data-e="${e}">${e}</button>`).join('')}</div>
  <label>想用输入法里的表情：点下面输入框，切到键盘的表情页选一个</label><input id="in_e" placeholder="😀">
@@ -157,13 +268,12 @@ function iconSheet(title,name0,icon0,okTxt,done,goals0,cat0){
  prev();
  document.querySelectorAll('[data-e]').forEach(b=>b.onclick=()=>{pick=b.dataset.e;prev()});
  $('in_e').oninput=e=>{const x=firstEmoji(e.target.value);if(x){pick=x;prev()}};
- document.querySelectorAll('[data-ct]').forEach(b=>b.onclick=()=>{cat=b.dataset.ct;$('in_cat').value='';document.querySelectorAll('[data-ct]').forEach(x=>x.classList.toggle('on',x==b))});
  $('up').onclick=()=>$('fl').click();
  $('fl').onchange=e=>{const f=e.target.files[0];if(!f)return;const rd=new FileReader();
   rd.onload=()=>{const im=new Image();im.onload=()=>{const N=128,c=document.createElement('canvas');c.width=c.height=N;const m=Math.min(im.width,im.height),sx=(im.width-m)/2,sy=(im.height-m)/2;c.getContext('2d').drawImage(im,sx,sy,m,m,0,0,N,N);pick=c.toDataURL('image/png');prev()};im.src=rd.result};rd.readAsDataURL(f)};
- $('ok').onclick=()=>{const n=$('in_n').value.trim();if(!n){alert('请输入名称');return}const g=[...new Set($('in_g').value.split(/[\s,，、]+/).map(Number).filter(x=>x>0))].sort((a,b)=>a-b).slice(0,5);const nc=$('in_cat').value.trim();if(nc){cat=nc;if(!S.cats.includes(nc))S.cats.push(nc)}done(n,pick,g,cat)};
+ $('ok').onclick=()=>{const n=$('in_n').value.trim();if(!n){alert('请输入名称');return}const g=[...new Set($('in_g').value.split(/[\s,，、]+/).map(Number).filter(x=>x>0))].sort((a,b)=>a-b).slice(0,5);done(n,pick,g,$('in_nd').value,{on:$('in_ac').checked,tiers:$('in_at').value.split(/[\s,，、]+/).map(Number).filter(x=>x>=1&&x<=5)})};
 }
-$('addItem').onclick=()=>iconSheet('新建打卡项目','','','创建',(n,ic,g,c)=>{S.items.push({id:Date.now(),name:n,icon:ic,goals:g,cat:c});save();close();renderHome()},undefined,(S.fcat&&S.fcat!='ALL'&&S.fcat!='__none')?S.fcat:'');
+$('addItem').onclick=()=>iconSheet('新建打卡项目','','','创建',(n,ic,g,nd,ac)=>{S.items.push({id:Date.now(),name:n,icon:ic,goals:g,node:nd,ach:ac});save();syncAch(false);close();renderHome()});
 
 let tab=1,cm=new Date(),mode='month',off=0;
 cm=new Date(cm.getFullYear(),cm.getMonth(),1);
@@ -202,30 +312,8 @@ const open=h=>{$('pn').innerHTML=h;$('sh').classList.add('show')};
 const close=()=>$('sh').classList.remove('show');
 $('sh').onclick=e=>{if(e.target==$('sh'))close()};
 const nowStr=d=>dk(d)+'T'+p2(d.getHours())+':'+p2(d.getMinutes());
-function catSheet(){
- migrate();
- open(`<h3 style="margin:0">分类管理</h3><label>点输入框直接改名，改完点空白处保存；✕ 删除（该分类下的项目会变成“未分类”）</label>
- ${S.cats.map((c,i)=>`<div style="display:flex;gap:8px;margin:6px 0"><input data-ci="${i}" value="${c}" maxlength="10"><button class="btn g" data-cd="${i}" style="width:56px;margin:0">✕</button></div>`).join('')||'<div class="empty">还没有分类</div>'}
- <label>新增分类</label><div style="display:flex;gap:8px"><input id="nc" maxlength="10" placeholder="例如：健康类"><button class="btn" id="ncb" style="width:80px;margin:0">添加</button></div>
- <button class="btn g" id="cback">返回设置</button>`);
- document.querySelectorAll('[data-ci]').forEach(el=>el.onchange=()=>{
-  const i=+el.dataset.ci,old=S.cats[i],nv=el.value.trim();
-  if(!nv){el.value=old;return}
-  if(nv==old)return;
-  S.items.forEach(x=>{if(x.cat==old)x.cat=nv});
-  if(S.fcat==old)S.fcat=nv;
-  if(S.cats.includes(nv)){S.cats.splice(i,1)}else S.cats[i]=nv;
-  save();catSheet()});
- document.querySelectorAll('[data-cd]').forEach(b=>b.onclick=()=>{
-  const i=+b.dataset.cd,c=S.cats[i],n=S.items.filter(x=>x.cat==c).length;
-  if(!confirm('删除分类“'+c+'”？'+(n?'其下 '+n+' 个项目会变成未分类。':'')))return;
-  S.items.forEach(x=>{if(x.cat==c)x.cat=''});if(S.fcat==c)S.fcat='ALL';
-  S.cats.splice(i,1);save();catSheet()});
- $('ncb').onclick=()=>{const v=$('nc').value.trim();if(!v)return;if(S.cats.includes(v)){alert('分类已存在');return}S.cats.push(v);save();catSheet()};
- $('cback').onclick=()=>{$('more').onclick();if(view=='home')renderHome();else render()};
-}
 function compress(f,max,cb){const rd=new FileReader();rd.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',0.7))};im.src=rd.result};rd.readAsDataURL(f)}
-function editItem(id){cur=id;const it=curItem();iconSheet('修改项目',it.name,it.icon,'保存',(n,ic,g,c)=>{it.name=n;it.icon=ic;it.goals=g;it.cat=c;save();if(view=='det')$('name').value=n;close();render()},it.goals,it.cat)}
+function editItem(id){cur=id;const it=curItem();iconSheet('修改项目',it.name,it.icon,'保存',(n,ic,g,nd,ac)=>{it.name=n;it.icon=ic;it.goals=g;it.node=nd;it.ach=ac;save();syncAch(false);if(view=='det')$('name').value=n;close();render()},it.goals,it.node,it.ach)}
 function openEdit(id,ts0){
  const r=id?S.recs.find(x=>x.id==id):{n:1,note:'',ts:ts0||Date.now()};let img=r.img||'';
  open(`<h3 style="margin:0">${id?'编辑记录':'新增记录'}</h3>
@@ -240,7 +328,7 @@ function openEdit(id,ts0){
  $('f_i').onchange=e=>{const f=e.target.files[0];if(f)compress(f,480,d=>{img=d;pv()})};
  $('ok').onclick=()=>{const ts=new Date($('f_t').value).getTime()||Date.now(),n=Math.max(1,+$('f_n').value||1),note=$('f_c').value;
   if(id){Object.assign(r,{ts,n,note,img})}else{const it=curItem(),b=it?starsOf(it):0;S.recs.push({id:Date.now(),item:cur,ts,n,note,img});const a=it?starsOf(it):0;if(a>b)setTimeout(()=>alert('🎉 恭喜！「'+it.name+'」获得第 '+a+' 颗星 ⭐'),100)}
-  save();close();render()};
+  syncAch(true);save();close();render()};
  if(id)$('del').onclick=()=>{if(confirm('确定删除？')){S.recs=S.recs.filter(x=>x.id!=id);save();close();render()}};
 }
 $('fab').onclick=()=>openEdit(0);
@@ -249,17 +337,15 @@ $('more').onclick=()=>{
  const th=[['','跟随系统'],['light','白天'],['dark','夜间']];
  open(`<h3 style="margin:0">设置</h3>
  <label>显示模式</label><div class="pill t">${th.map(([v,t])=>`<button data-th="${v}" class="${(S.theme||'')==v?'on':''}">${t}</button>`).join('')}</div>
- <button class="btn g" id="catm" style="margin-top:12px">分类管理（改名 / 删除 / 新增）</button>
  <label>主页分组方式</label><select id="s_g">${Object.entries(GROUPS).map(([v,t])=>`<option value="${v}" ${(S.group||'none')==v?'selected':''}>${t}</option>`).join('')}</select>
  <label>主页排序</label><select id="s_s">${Object.entries(SORTS).map(([v,x])=>`<option value="${v}" ${(S.sort||'new')==v?'selected':''}>${x[0]}</option>`).join('')}</select>
  <label>点亮的日期显示</label><div class="pill t"><button data-di="0" class="${S.dayImg?'':'on'}">系统颜色</button><button data-di="1" class="${S.dayImg?'on':''}">备注图片</button></div>
  <label>主题色</label><div class="sw">${cols.map(c=>`<button data-c="${c}" style="background:${c}" class="${(S.color||'#f2b000')==c?'on':''}"></button>`).join('')}<input type="color" id="cp" value="${S.color||'#f2b000'}"><span style="color:var(--sub);font-size:13px">自定义</span></div>
  <label>数据备份（复制保存；换设备时粘贴后导入）</label>
  <textarea id="bk" rows="4">${JSON.stringify(S)}</textarea>
- <button class="btn g" id="imp">导入（覆盖当前数据）</button>${inDet?'<button class="btn g" id="edIc">修改名称 / 图标 / 分类 / 星级目标</button><button class="btn g" id="delItem" style="color:#e5484d">删除此项目及其全部记录</button>':''}`);
+ <button class="btn g" id="imp">导入（覆盖当前数据）</button>${inDet?'<button class="btn g" id="edIc">修改名称 / 图标 / 技能树位置 / 星级目标</button><button class="btn g" id="delItem" style="color:#e5484d">删除此项目及其全部记录</button>':''}`);
  if(inDet)$('edIc').onclick=()=>editItem(cur);
  if(inDet)$('delItem').onclick=()=>{if(confirm('确定删除“'+curItem().name+'”及其全部记录？不可恢复')){S.recs=S.recs.filter(r=>r.item!=cur);S.items=S.items.filter(i=>i.id!=cur);save();close();view='home';go()}};
- $('catm').onclick=catSheet;
  $('s_g').onchange=e=>{S.group=e.target.value;save();if(view=='home')renderHome()};$('s_s').onchange=e=>{S.sort=e.target.value;save();if(view=='home')renderHome()};
  document.querySelectorAll('[data-di]').forEach(b=>b.onclick=()=>{S.dayImg=b.dataset.di=='1';save();$('more').onclick();if(view=='det')render()});
  document.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{S.theme=b.dataset.th;save();applyPrefs();$('more').onclick()});
@@ -348,6 +434,199 @@ function renderStat(){
   const cmp=hasCmp&&cv!=null?`<div class="cmp">${lblPrev[mode]} ${p==null?'–':(+p).toFixed(t=='记录次数'||t=='记录天数'?0:1)} ${delta(cv,p)}<br>${lblSame[mode]} ${y==null?'–':(+y).toFixed(t=='记录次数'||t=='记录天数'?0:1)} ${delta(cv,y)}</div>`:'';
   return`<div class="card"><div class="big">${v}<span>${u}</span></div><div class="lab">${t}</div>${cmp}</div>`}).join('');
 }
-function render(){if(view=='home'){renderHome();return}tab==1?renderRec():renderStat()}
+const RV={dash:()=>renderDash(),home:()=>renderHome(),tree:()=>renderTree(),life:()=>renderLife(),goals:()=>renderGoals(),wall:()=>renderWall()};
+function render(){if(RV[view]){RV[view]();return}tab==1?renderRec():renderStat()}
+// ===== 成就 =====
+const TC=[null,'#4cc38a','#3e9bff','#9b6cf0','#ff7a45','#f2b000'],TN=[null,'一星','二星','三星','四星','五星'];
+const typesAll=extra=>{const ex=[...new Set(extra.filter(t=>t&&!S.ltypes.includes(t)))];return[...S.ltypes,...ex,'']};
+const itemType=()=>S.itemType===undefined?'累计':S.itemType;
+const typeSel=(id,cur)=>`<select id="${id}">${[...S.ltypes,...(cur&&!S.ltypes.includes(cur)?[cur]:[])].map(t=>`<option ${cur==t?'selected':''}>${t}</option>`).join('')}</select><div style="display:flex;gap:8px;margin-top:8px"><input id="${id}_n" maxlength="8" placeholder="或输入新类型"><button class="btn g" id="${id}_m" style="width:76px;margin:0">管理</button></div>`;
+function readType(id){const n=$(id+'_n').value.trim();if(n&&!S.ltypes.includes(n))S.ltypes.push(n);return n||$(id).value}
+function typeSheet(){
+ open(`<h3 style="margin:0">类型管理</h3><label>点输入框改名；✕ 删除（用到它的目标会变成“未分类型”）</label>${S.ltypes.map((c,i)=>`<div style="display:flex;gap:8px;margin:6px 0"><input data-ti="${i}" value="${c}" maxlength="8"><button class="btn g" data-td="${i}" style="width:56px;margin:0">✕</button></div>`).join('')}<label>新增类型</label><div style="display:flex;gap:8px"><input id="nt" maxlength="8" placeholder="例如：旅行体验"><button class="btn" id="ntb" style="width:80px;margin:0">添加</button></div><button class="btn g" id="tback2">完成</button>`);
+ const chg=(a,b)=>{S.lgoals.forEach(g=>{if(g.type==a)g.type=b});S.life.events.forEach(e=>{if(e.type==a)e.type=b});if(itemType()==a)S.itemType=b};
+ document.querySelectorAll('[data-ti]').forEach(el=>el.onchange=()=>{const i=+el.dataset.ti,old=S.ltypes[i],nv=el.value.trim();if(!nv||nv==old){el.value=old;return}chg(old,nv);if(S.ltypes.includes(nv))S.ltypes.splice(i,1);else S.ltypes[i]=nv;save();typeSheet()});
+ document.querySelectorAll('[data-td]').forEach(b=>b.onclick=()=>{const i=+b.dataset.td,c=S.ltypes[i];if(!confirm('删除类型“'+c+'”？用到它的目标会变成“未分类型”。'))return;chg(c,'');S.ltypes.splice(i,1);save();typeSheet()});
+ $('ntb').onclick=()=>{const v=$('nt').value.trim();if(!v||S.ltypes.includes(v))return;S.ltypes.push(v);save();typeSheet()};
+ $('tback2').onclick=()=>{close();render()}}
+const ICONS={
+ star:['星星','<path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1z"/>'],
+ crown:['皇冠','<path d="M3 19h18v2H3zM3 17L2 7l5 4 5-7 5 7 5-4-1 10z"/>'],
+ trophy:['奖杯','<path d="M7 3h10v6a5 5 0 0 1-10 0z"/><rect x="11" y="13" width="2" height="5"/><rect x="8" y="18" width="8" height="3" rx="1"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3" fill="none" stroke="currentColor" stroke-width="2"/>'],
+ diamond:['钻石','<path d="M6 3h12l4 6-10 13L2 9z"/>'],
+ heart:['爱心','<path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3 5 6.5 5c2 0 3.5 1.1 5.5 3.3C14 6.1 15.5 5 17.5 5 21 5 22.8 8.6 21.5 11.8 19.5 16.4 12 21 12 21z"/>'],
+ shield:['盾牌','<path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z"/>']};
+function achIcon(tier,lit,sz){const st=ICONS[S.achStyle]||ICONS.star,c=lit?TC[tier]:'#8886';
+ return`<svg viewBox="0 0 24 24" width="${sz}" height="${sz}" fill="${c}" style="color:${c};${lit?(tier==5?'filter:drop-shadow(0 0 5px #f2b000)':'filter:drop-shadow(0 0 2px '+c+')'):''}">${st[1]}</svg>`}
+const defTiers=n=>Array.from({length:n},(_,i)=>n==1?1:1+Math.round(i*4/(n-1)));
+function itemAt(it,goal){const rs=S.recs.filter(r=>r.item==it.id).sort((a,b)=>a.ts-b.ts);let c=0;for(const r of rs){c+=r.n;if(c>=goal)return r.ts}return 0}
+const fmtD=ts=>{const d=new Date(ts);return d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日'};
+const todayS=()=>{const d=new Date();return d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate())};
+function achList(){
+ const out=[];
+ S.items.forEach(it=>{if(!(it.ach&&it.ach.on))return;const g=it.goals||[],tr=(it.ach.tiers&&it.ach.tiers.length==g.length)?it.ach.tiers:defTiers(g.length),t=total(it.id);
+  g.forEach((x,i)=>{const k='i:'+it.id+':'+x,lit=t>=x;out.push({key:k,title:it.name+' 累计 '+x,tier:tr[i],type:itemType(),src:'打卡',lit,at:lit?(S.ach[k]||itemAt(it,x)):0,hint:'累计 '+Math.min(t,x)+' / '+x})})});
+ S.lgoals.forEach(g=>{if(!(g.ach&&g.ach.on))return;const lit=g.status=='已完成';out.push({key:'g:'+g.id,title:g.title,tier:g.ach.tier||3,type:g.type||'一次性',src:'人生目标',lit,at:lit?(S.ach['g:'+g.id]||g.doneAt||0):0,hint:'当前状态：'+g.status})});
+ S.life.events.forEach(e=>{if(!(e.ach&&e.ach.on))return;const ts=new Date(e.date).getTime(),lit=ts<=Date.now();out.push({key:'e:'+e.id,title:e.title,tier:e.ach.tier||3,type:e.type||'一次性',src:'人生进度',lit,at:lit?ts:0,hint:'日期：'+e.date})});
+ return out}
+function syncAch(announce){const nw=[];achList().forEach(a=>{if(a.lit&&!S.ach[a.key]){S.ach[a.key]=a.at||Date.now();nw.push(a.title)}});if(nw.length)save();if(announce&&nw.length)setTimeout(()=>alert('🏆 解锁成就：'+nw.join('、')),250)}
+function renderWall(){
+ migrate();syncAch(false);
+ const L=achList(),lit=L.filter(a=>a.lit).length,gm=S.wallGroup||'type';
+ let groups;
+ if(gm=='type')groups=typesAll(L.map(a=>a.type)).map(t=>[t||'未分类型',L.filter(a=>(a.type||'')==t)]);
+ else if(gm=='src')groups=['打卡','人生目标','人生进度'].map(t=>[t,L.filter(a=>a.src==t)]);
+ else groups=[5,4,3,2,1].map(t=>[TN[t]+'成就',L.filter(a=>a.tier==t)]);
+ groups=groups.filter(g=>g[1].length);
+ const opt=(o,v)=>Object.entries(o).map(([k,t])=>`<option value="${k}" ${v==k?'selected':''}>${t}</option>`).join('');
+ $('wbody').innerHTML=`<div class="card" style="margin:6px 0 10px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><span style="font-size:30px;font-weight:700">${lit}</span><span style="color:var(--sub)"> / ${L.length} 已点亮</span></div><div style="display:flex">${[1,2,3,4,5].map(t=>achIcon(t,true,18)).join('')}</div></div><div style="background:var(--sf);border-radius:6px;height:8px;overflow:hidden;margin-top:8px"><div style="height:100%;width:${L.length?lit/L.length*100:0}%;background:var(--ac)"></div></div></div>
+ <div style="display:flex;gap:8px;margin-bottom:6px"><select id="w_g" style="flex:1;padding:10px;border-radius:10px;border:1px solid #8884;background:var(--card);color:var(--tx)">${opt({type:'按类型汇总',src:'按来源汇总',tier:'按星级汇总'},gm)}</select><select id="w_s" style="flex:1;padding:10px;border-radius:10px;border:1px solid #8884;background:var(--card);color:var(--tx)">${Object.entries(ICONS).map(([k,v])=>`<option value="${k}" ${(S.achStyle||'star')==k?'selected':''}>图标：${v[0]}</option>`).join('')}</select></div>
+ ${groups.map(([t,l])=>{l.sort((a,b)=>b.lit-a.lit||b.tier-a.tier);return`<div class="gt">${t} · ${l.filter(a=>a.lit).length}/${l.length}</div><div class="agrid">${l.map(a=>`<div class="ach" data-ak="${a.key}">${achIcon(a.tier,a.lit,40)}<small style="color:${a.lit?'var(--tx)':'var(--sub)'}">${a.title}</small><small style="color:${a.lit?TC[a.tier]:'#8886'}">${'★'.repeat(a.tier)}</small></div>`).join('')}</div>`}).join('')||'<div class="empty">还没有成就 🏆<br><br>在打卡项目、人生目标或人生事件里勾选「设置成就」，它们就会出现在这里。</div>'}`;
+ $('w_g').onchange=e=>{S.wallGroup=e.target.value;save();renderWall()};$('w_s').onchange=e=>{S.achStyle=e.target.value;save();renderWall()};
+ document.querySelectorAll('[data-ak]').forEach(el=>el.onclick=()=>{const a=L.find(x=>x.key==el.dataset.ak);
+  open(`<div style="text-align:center">${achIcon(a.tier,a.lit,88)}<h3 style="margin:8px 0 4px">${a.title}</h3><div style="color:${TC[a.tier]};font-size:18px">${'★'.repeat(a.tier)}<span style="color:#8886">${'★'.repeat(5-a.tier)}</span></div><div style="color:var(--sub);margin-top:6px">${TN[a.tier]}成就 · ${a.type} · 来自「${a.src}」</div><div style="margin-top:14px;font-size:17px">${a.lit?'🎉 首次达成：<b>'+(a.at?fmtD(a.at):'—')+'</b>':'尚未达成<br><span style="color:var(--sub);font-size:14px">'+a.hint+'</span>'}</div></div><button class="btn g" onclick="close()">关闭</button>`)})}
+// ===== 人生进度 =====
+const bornT=()=>new Date(S.life.birth).getTime();
+const ageOf=ts=>(ts-bornT())/(365.2425*864e5);
+function renderLife(){
+ migrate();const Lf=S.life;
+ if(!Lf.birth){$('lbody').innerHTML=`<div class="card"><b style="font-size:18px">先设置出生日期 🎂</b><p style="color:var(--sub)">人生进度条按 0–100 岁从下到上排布，需要出生日期来计算你现在的位置和每个事件发生时的年龄。</p><input type="date" id="lb" style="width:100%;padding:11px;border-radius:10px;border:1px solid #8884;background:var(--sf);color:var(--tx);font-size:16px"><button class="btn" id="lbs">保存</button></div>`;
+  $('lbs').onclick=()=>{if(!$('lb').value){alert('请选择日期');return}S.life.birth=$('lb').value;save();renderLife()};return}
+ const now=ageOf(Date.now()),PX=9,TOP=30,H=100*PX,yA=a=>TOP+(100-Math.max(0,Math.min(100,a)))*PX;
+ const evs=[...Lf.events].map(e=>({e,a:ageOf(new Date(e.date).getTime())})).sort((x,y)=>y.a-x.a);
+ let prev=-99,boxes='';
+ evs.forEach(({e,a})=>{const y=yA(a),ly=Math.max(y-20,prev+46);prev=ly;const past=a<=now;
+  boxes+=`<div style="position:absolute;left:62px;top:${y}px;width:12px;height:1px;background:${past?'var(--ac)':'#8886'}"></div>${Math.abs(ly+20-y)>2?`<div style="position:absolute;left:68px;top:${Math.min(y,ly+20)}px;width:1px;height:${Math.abs(ly+20-y)}px;background:#8886"></div>`:''}
+  <div style="position:absolute;left:43px;top:${y-7}px;width:14px;height:14px;border-radius:50%;box-sizing:border-box;border:3px solid var(--ac);background:${past?'var(--ac)':'var(--bg)'}"></div>
+  <div class="gcard" data-ev="${e.id}" style="position:absolute;left:78px;right:84px;top:${ly}px;height:40px;margin:0;padding:5px 10px;overflow:hidden;opacity:${past?1:.7}"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${e.title}</b>${e.ach&&e.ach.on?achIcon(e.ach.tier||3,past,16):''}</div><div style="font-size:11px;color:var(--sub)">${e.date} · ${a.toFixed(0)}岁</div></div>`});
+ const ticks=Array.from({length:11},(_,i)=>i*10).map(a=>`<div style="position:absolute;left:0;top:${yA(a)-8}px;width:34px;text-align:right;font-size:11px;color:var(--sub)">${a}</div><div style="position:absolute;left:38px;top:${yA(a)}px;width:14px;height:1px;background:#8886"></div>`).join('');
+ const h=Math.max(TOP+H+30,prev+70),yn=yA(now);
+ $('lbody').innerHTML=`<div class="card" style="margin:6px 0 12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><span style="font-size:30px;font-weight:700">${now.toFixed(1)}</span><span style="color:var(--sub)"> 岁</span></div><div style="font-size:20px;color:var(--ac)">${Math.min(100,now).toFixed(1)}%</div></div><div style="background:var(--sf);border-radius:6px;height:8px;overflow:hidden;margin-top:8px"><div style="height:100%;width:${Math.min(100,now)}%;background:var(--ac)"></div></div><div style="color:var(--sub);font-size:13px;margin-top:6px">按 100 岁计算 · 出生于 ${Lf.birth} · ${Lf.events.length} 个重大事件</div></div>
+ <div style="position:relative;height:${h}px"><div style="position:absolute;left:48px;top:${TOP}px;width:4px;height:${H}px;border-radius:2px;background:#8884"></div><div style="position:absolute;left:48px;top:${yn}px;width:4px;height:${TOP+H-yn}px;border-radius:2px;background:var(--ac);box-shadow:0 0 8px var(--ac)"></div>${ticks}
+ <div style="position:absolute;left:52px;right:0;top:${yn}px;border-top:2px dashed var(--ac);opacity:.6"></div><div style="position:absolute;left:40px;top:${yn-10}px;width:20px;height:20px;border-radius:50%;background:var(--ac);box-shadow:0 0 10px var(--ac)"></div><div style="position:absolute;right:0;top:${yn-13}px;background:var(--ac);color:#fff;border-radius:14px;padding:3px 10px;font-size:12px;font-weight:700">现在 ${now.toFixed(0)}岁</div>${boxes}</div>`;
+ document.querySelectorAll('[data-ev]').forEach(el=>el.onclick=()=>eventSheet(el.dataset.ev))}
+function eventSheet(id){
+ migrate();
+ if(!S.life.birth){alert('请先设置出生日期');return}
+ const e=id?S.life.events.find(x=>x.id==id):{title:'',date:todayS(),note:'',type:'一次性',ach:{on:false,tier:3}};
+ open(`<h3 style="margin:0">${id?'编辑人生事件':'添加人生重大变化'}</h3>
+ <label>发生了什么</label><input id="e_t" value="${e.title}" placeholder="例如：大学毕业 / 结婚 / 第一份工作">
+ <label>日期（未来的计划也可以）</label><input type="date" id="e_d" value="${e.date}">
+ <label>类型</label>${typeSel('e_ty',e.type)}
+ <label>备注</label><input id="e_n" value="${e.note||''}">
+ <label><input type="checkbox" id="e_ac" ${e.ach&&e.ach.on?'checked':''}> 设置成就（到了这个日期自动点亮）</label>
+ <select id="e_tr">${[1,2,3,4,5].map(t=>`<option value="${t}" ${(e.ach&&e.ach.tier||3)==t?'selected':''}>${TN[t]}成就</option>`).join('')}</select>
+ <button class="btn" id="e_ok">保存</button>${id?'<button class="btn g" id="e_del" style="color:#e5484d">删除</button>':''}`);
+ $('e_ty_m').onclick=typeSheet;
+ $('e_ok').onclick=()=>{const t=$('e_t').value.trim();if(!t||!$('e_d').value){alert('请填写事件和日期');return}
+  const o={title:t,date:$('e_d').value,type:readType('e_ty'),note:$('e_n').value,ach:{on:$('e_ac').checked,tier:+$('e_tr').value}};
+  if(id)Object.assign(e,o);else S.life.events.push({id:'e'+Date.now(),...o});
+  save();syncAch(true);close();renderLife()};
+ if(id)$('e_del').onclick=()=>{if(confirm('删除这个事件？')){S.life.events=S.life.events.filter(x=>x.id!=id);save();close();renderLife()}}}
+// ===== 人生目标 =====
+const STC={'进行中':'#3e9bff','待安排':'#ff7a45','已完成':'#30a46c','已放弃':'#999'};
+const bYear=()=>S.life.birth?new Date(S.life.birth).getFullYear():null;
+const gYear=g=>g.by=='year'?g.year:(bYear()!=null&&g.age!==''&&g.age!=null?bYear()+Number(g.age):null);
+const gAge=g=>g.by=='age'?g.age:(bYear()!=null&&g.year?g.year-bYear():null);
+const gTime=g=>{const y=gYear(g),a=gAge(g);return[y?y+'年':'',a!=null&&a!==''&&!isNaN(a)?a+'岁':''].filter(Boolean).join(' · ')||'未定'};
+function renderGoals(){
+ migrate();
+ const sk=S.gSort||'age',gm=S.gGroup||'none';
+ const key=g=>{const v=sk=='age'?gAge(g):gYear(g);return v==null||v===''||isNaN(v)?1e9:Number(v)};
+ const L=[...S.lgoals].sort((a,b)=>key(a)-key(b));
+ let groups;
+ if(gm=='cat')groups=[...S.lcats,''].map(c=>[c||'未分类',L.filter(g=>(g.cat||'')==c)]);
+ else if(gm=='status')groups=['进行中','待安排','已完成','已放弃'].map(t=>[t,L.filter(g=>g.status==t)]);
+ else if(gm=='type')groups=typesAll(L.map(g=>g.type)).map(t=>[t||'未分类型',L.filter(g=>(g.type||'')==t)]);
+ else groups=[['',L]];
+ groups=groups.filter(g=>g[1].length);
+ const cnt=t=>S.lgoals.filter(g=>g.status==t).length;
+ const so=(o,v)=>Object.entries(o).map(([k,t])=>`<option value="${k}" ${v==k?'selected':''}>${t}</option>`).join('');
+ const sty='flex:1;padding:10px;border-radius:10px;border:1px solid #8884;background:var(--card);color:var(--tx)';
+ $('gbody').innerHTML=`<div class="card" style="margin:6px 0 10px;display:flex;justify-content:space-around;text-align:center">${['进行中','待安排','已完成','已放弃'].map(t=>`<div><div style="font-size:24px;font-weight:700;color:${STC[t]}">${cnt(t)}</div><div style="color:var(--sub);font-size:12px">${t}</div></div>`).join('')}</div>
+ <div style="display:flex;gap:8px"><select id="g_sort" style="${sty}">${so({age:'按年龄排序',year:'按年份排序'},sk)}</select><select id="g_grp" style="${sty}">${so({none:'不归类',cat:'按分类归类',status:'按进度归类',type:'按类型归类'},gm)}</select></div>
+ ${groups.map(([t,l])=>(t?`<div class="gt">${t} · ${l.length}</div>`:'')+l.map(g=>`<div class="gcard" data-gg="${g.id}"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:17px">${g.title}</b>${g.ach&&g.ach.on?achIcon(g.ach.tier||3,g.status=='已完成',22):''}</div><div style="color:var(--sub);margin-top:4px">🎯 ${gTime(g)}${g.note?' · '+g.note:''}</div><span class="chip" style="background:${STC[g.status]};color:#fff">${g.status}</span>${g.type?`<span class="chip">${g.type}</span>`:''}${g.cat?`<span class="chip">${g.cat}</span>`:''}</div>`).join('')).join('')||'<div class="empty">还没有人生目标 🎯<br><br>点右上角「＋ 目标」，设置想在哪一年、哪一岁完成什么。</div>'}`;
+ $('g_sort').onchange=e=>{S.gSort=e.target.value;save();renderGoals()};$('g_grp').onchange=e=>{S.gGroup=e.target.value;save();renderGoals()};
+ document.querySelectorAll('[data-gg]').forEach(el=>el.onclick=()=>goalSheet(el.dataset.gg))}
+function lcatSheet(){
+ open(`<h3 style="margin:0">目标分类管理</h3><label>点输入框改名；✕ 删除（该分类下的目标变为未分类）</label>${S.lcats.map((c,i)=>`<div style="display:flex;gap:8px;margin:6px 0"><input data-ci="${i}" value="${c}" maxlength="10"><button class="btn g" data-cd="${i}" style="width:56px;margin:0">✕</button></div>`).join('')}<label>新增分类</label><div style="display:flex;gap:8px"><input id="nc" maxlength="10" placeholder="例如：旅行"><button class="btn" id="ncb" style="width:80px;margin:0">添加</button></div><button class="btn g" id="cback">完成</button>`);
+ document.querySelectorAll('[data-ci]').forEach(el=>el.onchange=()=>{const i=+el.dataset.ci,old=S.lcats[i],nv=el.value.trim();if(!nv||nv==old){el.value=old;return}S.lgoals.forEach(g=>{if(g.cat==old)g.cat=nv});if(S.lcats.includes(nv))S.lcats.splice(i,1);else S.lcats[i]=nv;save();lcatSheet()});
+ document.querySelectorAll('[data-cd]').forEach(b=>b.onclick=()=>{const i=+b.dataset.cd,c=S.lcats[i];if(!confirm('删除分类“'+c+'”？其下目标会变为未分类。'))return;S.lgoals.forEach(g=>{if(g.cat==c)g.cat=''});S.lcats.splice(i,1);save();lcatSheet()});
+ $('ncb').onclick=()=>{const v=$('nc').value.trim();if(!v||S.lcats.includes(v))return;S.lcats.push(v);save();lcatSheet()};
+ $('cback').onclick=()=>{close();renderGoals()}}
+function goalSheet(id){
+ migrate();
+ const g=id?S.lgoals.find(x=>x.id==id):{title:'',note:'',by:'year',year:new Date().getFullYear()+5,age:'',status:'进行中',type:'一次性',cat:'',ach:{on:false,tier:3}};
+ let cat=g.cat||'';const ST=['进行中','待安排','已完成','已放弃'],by0=g.by||'year';
+ open(`<h3 style="margin:0">${id?'编辑人生目标':'新建人生目标'}</h3>
+ <label>目标</label><input id="g_t" value="${g.title}" placeholder="例如：环游世界 / 存够100万 / 出一本书">
+ <label>计划在哪一年或哪一岁达成</label><div style="display:flex;gap:8px"><select id="g_by" style="width:42%"><option value="year" ${by0=='year'?'selected':''}>按年份</option><option value="age" ${by0=='age'?'selected':''}>按年龄</option></select><input id="g_v" type="number" value="${by0=='year'?(g.year||''):(g.age===''||g.age==null?'':g.age)}" placeholder="2030 或 35"></div>
+ <label>进度</label><select id="g_s">${ST.map(t=>`<option ${g.status==t?'selected':''}>${t}</option>`).join('')}</select>
+ <div id="g_dw" style="display:${g.status=='已完成'?'block':'none'}"><label>完成日期</label><input type="date" id="g_d" value="${g.doneAt?new Date(g.doneAt).toISOString().slice(0,10):todayS()}"></div>
+ <label>类型</label>${typeSel('g_ty',g.type)}
+ <label>分类</label><div class="emo">${['',...S.lcats].map(c=>`<button data-gc="${c}" style="font-size:15px;width:auto;padding:0 14px" class="${c==cat?'on':''}">${c||'未分类'}</button>`).join('')}</div>
+ <div style="display:flex;gap:8px;margin-top:8px"><input id="g_nc" maxlength="10" placeholder="或输入新分类"><button class="btn g" id="g_mg" style="width:76px;margin:0">管理</button></div>
+ <label>备注</label><input id="g_n" value="${g.note||''}">
+ <label><input type="checkbox" id="g_ac" ${g.ach&&g.ach.on?'checked':''}> 设置成就（完成后在成就墙点亮）</label>
+ <select id="g_tr">${[1,2,3,4,5].map(t=>`<option value="${t}" ${(g.ach&&g.ach.tier||3)==t?'selected':''}>${TN[t]}成就</option>`).join('')}</select>
+ <button class="btn" id="g_ok">保存</button>${id?'<button class="btn g" id="g_del" style="color:#e5484d">删除</button>':''}`);
+ $('g_ty_m').onclick=typeSheet;
+ document.querySelectorAll('[data-gc]').forEach(b=>b.onclick=()=>{cat=b.dataset.gc;$('g_nc').value='';document.querySelectorAll('[data-gc]').forEach(x=>x.classList.toggle('on',x==b))});
+ $('g_s').onchange=e=>{$('g_dw').style.display=e.target.value=='已完成'?'block':'none'};
+ $('g_mg').onclick=lcatSheet;
+ $('g_ok').onclick=()=>{const t=$('g_t').value.trim();if(!t){alert('请输入目标');return}
+  const by=$('g_by').value,v=$('g_v').value,nc=$('g_nc').value.trim(),st=$('g_s').value;
+  if(nc){cat=nc;if(!S.lcats.includes(nc))S.lcats.push(nc)}
+  const o={title:t,by,year:by=='year'?(+v||''):'',age:by=='age'?(v===''?'':+v):'',status:st,type:readType('g_ty'),cat,note:$('g_n').value,ach:{on:$('g_ac').checked,tier:+$('g_tr').value},doneAt:st=='已完成'?(new Date($('g_d').value).getTime()||Date.now()):0};
+  if(id)Object.assign(g,o);else S.lgoals.push({id:'g'+Date.now(),...o});
+  save();syncAch(true);close();renderGoals()};
+ if(id)$('g_del').onclick=()=>{if(confirm('删除这个目标？')){S.lgoals=S.lgoals.filter(x=>x.id!=id);save();close();renderGoals()}}}
+$('lAdd').onclick=()=>eventSheet(0);$('gAdd').onclick=()=>goalSheet(0);
+$('lBirth').onclick=()=>{open(`<h3 style="margin:0">出生日期</h3><label>用于计算年龄和人生进度</label><input type="date" id="lb" value="${S.life.birth||''}"><button class="btn" id="lbs">保存</button>`);$('lbs').onclick=()=>{if(!$('lb').value)return;S.life.birth=$('lb').value;save();close();renderLife()}};
+document.querySelectorAll('#nav2 button').forEach(b=>b.onclick=()=>{view=b.dataset.v;go()});
+// ===== 总览首页 =====
+const DMODS={checkin:['🏠','打卡进度'],tree:['🌳','技能树'],life:['⏳','人生进度'],goals:['🎯','人生目标'],ach:['🏆','成就']};
+function dashCfg(){S.dash=S.dash||{};const d=S.dash;d.order=(d.order||[]).filter(k=>DMODS[k]);Object.keys(DMODS).forEach(k=>{if(!d.order.includes(k))d.order.push(k)});d.hide=d.hide||{};return d}
+const icoHtml=i=>isImg(i.icon)?`<img src="${i.icon}" style="width:100%;height:100%;object-fit:cover">`:i.icon;
+const cdText=ts=>{const dd=Math.ceil((ts-Date.now())/864e5);return dd<=0?'今天':dd>=365?Math.floor(dd/365)+' 年 '+Math.round(dd%365/30)+' 个月':dd>=30?Math.round(dd/30)+' 个月':dd+' 天'};
+function renderDash(){
+ migrate();syncAch(false);
+ const d=dashCfg(),now=new Date(),WKN=['日','一','二','三','四','五','六'];
+ const link=(v,t)=>`<span data-gov="${v}">${t||'查看全部'} ›</span>`;
+ const card=(k,body,to)=>`<div class="dcard"><div class="dh"><b>${DMODS[k][0]} ${DMODS[k][1]}</b>${link(to)}</div>${body}</div>`;
+ const M={};
+ M.checkin=()=>{const its=d.items?S.items.filter(i=>d.items.includes(i.id)):S.items;
+  if(!its.length)return card('checkin','<div class="sm">还没有打卡项目，去「打卡」页新建一个吧</div>','home');
+  return card('checkin',its.map(i=>{const t=total(i.id),g=i.goals||[],k=starsOf(i),nx=g.find(x=>t<x),pv=[0,...g.filter(x=>x<=t)].pop(),seg=g.length?(nx?(t-pv)/(nx-pv):1):0,last=Math.max(0,...S.recs.filter(r=>r.item==i.id).map(r=>r.ts));
+   return`<div class="drow"><div class="dic" data-goi="${i.id}">${icoHtml(i)}</div><div style="flex:1;min-width:0" data-goi="${i.id}"><div style="display:flex;justify-content:space-between;align-items:baseline"><b>${i.name}</b><span style="color:var(--ac);font-size:13px">${g.length?starStr(k):''}</span></div><div class="bar" style="margin:5px 0 3px"><i style="width:${Math.round(seg*100)}%"></i></div><div class="sm">累计 ${t}${nx?' / '+nx:(g.length?' · 已满星':'')} · 上次 ${last?ago(last):'暂无'}</div></div><button class="dq" data-q="${i.id}">+</button></div>`}).join(''),'home')};
+ M.tree=()=>{const all=S.items.filter(i=>i.node&&nodeById(i.node)),P=prog(all);
+  const rs=roots().map(r=>({r,p:prog(itemsUnder(r.id))})).filter(x=>x.p.has);
+  return card('tree',`<div style="display:flex;justify-content:space-between;align-items:baseline"><div><span class="big2">${P.has?P.pct+'%':'--'}</span><span class="sm"> 整体进度</span></div><div style="color:var(--ac);font-size:18px">${starStr(P.k)}</div></div>`+(rs.length?rs.slice(0,6).map(({r,p})=>`<div style="display:flex;align-items:center;gap:8px;margin-top:8px"><span style="width:64px;font-size:13px">${r.emoji||''}${r.name}</span><div class="bar" style="flex:1"><i style="width:${p.pct}%"></i></div><span class="sm" style="width:36px;text-align:right">${p.pct}%</span></div>`).join(''):'<div class="sm" style="margin-top:6px">给打卡项目设置「技能树位置」和「星级目标」后，这里会显示各主系的进度</div>'),'tree')};
+ M.life=()=>{const Lf=S.life;
+  if(!Lf.birth)return card('life','<div class="sm">设置出生日期，就能看到你的人生进度条</div>','life');
+  const a=ageOf(Date.now()),evs=Lf.events.map(e=>({e,ts:new Date(e.date).getTime()})).sort((x,y)=>x.ts-y.ts),nx=evs.find(x=>x.ts>Date.now()),pv=[...evs].reverse().find(x=>x.ts<=Date.now());
+  return card('life',`<div style="display:flex;justify-content:space-between;align-items:baseline"><div><span class="big2">${a.toFixed(1)}</span><span class="sm"> 岁</span></div><div style="color:var(--ac);font-size:18px;font-weight:700">${Math.min(100,a).toFixed(1)}%</div></div><div class="bar" style="position:relative;margin:8px 0 6px"><i style="width:${Math.min(100,a)}%"></i></div><div class="sm" style="display:flex;justify-content:space-between"><span>0</span><span>50</span><span>100</span></div>`+(nx?`<div style="margin-top:8px">⏭ 距「${nx.e.title}」还有 <b>${cdText(nx.ts)}</b></div>`:'')+(pv?`<div class="sm" style="margin-top:4px">⏮ 最近一次：${pv.e.title}（${pv.e.date}）</div>`:''),'life')};
+ M.goals=()=>{const c=t=>S.lgoals.filter(g=>g.status==t).length,key=g=>{const v=gYear(g);return v?+v:1e9};
+  const up=S.lgoals.filter(g=>g.status=='进行中').sort((a,b)=>key(a)-key(b)).slice(0,3);
+  return card('goals',`<div class="cnt4">${['进行中','待安排','已完成','已放弃'].map(t=>`<div><b style="color:${STC[t]}">${c(t)}</b><span class="sm">${t}</span></div>`).join('')}</div>`+up.map(g=>{const y=gYear(g),late=y&&y<now.getFullYear();return`<div style="display:flex;justify-content:space-between;margin-top:8px"><span>🎯 ${g.title}</span><span class="sm" style="${late?'color:#e5484d':''}">${gTime(g)}${late?' · 已过期':''}</span></div>`}).join('')||'<div class="sm" style="margin-top:8px">还没有进行中的目标</div>','goals')};
+ M.ach=()=>{const L=achList(),lit=L.filter(a=>a.lit),rec=[...lit].sort((a,b)=>b.at-a.at).slice(0,6);
+  return card('ach',`<div style="display:flex;justify-content:space-between;align-items:baseline"><div><span class="big2">${lit.length}</span><span class="sm"> / ${L.length} 已点亮</span></div></div><div class="bar" style="margin:6px 0 8px"><i style="width:${L.length?lit.length/L.length*100:0}%"></i></div>`+(rec.length?`<div class="sm">最近点亮</div><div style="display:flex;gap:10px;margin-top:6px;overflow:hidden">${rec.map(a=>`<div style="text-align:center;width:52px">${achIcon(a.tier,true,34)}<div class="sm" style="font-size:10px;line-height:1.1;max-height:22px;overflow:hidden">${a.title}</div></div>`).join('')}</div>`:'<div class="sm">还没有点亮的成就；在打卡、目标、事件里勾选「设置成就」</div>'),'wall')};
+ $('dbody').innerHTML=`<div style="padding:2px 2px 6px"><div style="font-size:15px;color:var(--sub)">${now.getMonth()+1}月${now.getDate()}日 · 周${WKN[now.getDay()]}</div></div>`+d.order.filter(k=>!d.hide[k]).map(k=>M[k]()).join('')||'';
+ if(d.order.every(k=>d.hide[k]))$('dbody').innerHTML='<div class="empty">所有模块都隐藏了，点右上角 ✎ 重新打开</div>';
+ document.querySelectorAll('[data-gov]').forEach(el=>el.onclick=()=>{view=el.dataset.gov;go()});
+ document.querySelectorAll('[data-q]').forEach(b=>b.onclick=e=>{e.stopPropagation();cur=+b.dataset.q;openEdit(0)});
+ document.querySelectorAll('[data-goi]').forEach(el=>el.onclick=()=>enterItem(+el.dataset.goi,'dash'))}
+function dashSheet(){
+ const d=dashCfg();
+ open(`<h3 style="margin:0">自定义总览</h3><label>勾选要显示的模块，用 ↑ ↓ 调整顺序</label>${d.order.map((k,i)=>`<div class="item"><span><input type="checkbox" data-dm="${k}" ${d.hide[k]?'':'checked'}>${DMODS[k][0]} ${DMODS[k][1]}</span><span><button class="dq" data-up="${i}" style="width:30px;height:30px;font-size:15px">↑</button> <button class="dq" data-dn="${i}" style="width:30px;height:30px;font-size:15px">↓</button></span></div>`).join('')}
+ <label>「打卡进度」里要展示的项目</label>${S.items.map(it=>`<div class="item"><span><input type="checkbox" data-ds="${it.id}" ${!d.items||d.items.includes(it.id)?'checked':''}>${isImg(it.icon)?'🖼️':it.icon} ${it.name}</span></div>`).join('')||'<div class="sm">还没有项目</div>'}
+ <button class="btn" id="dz">完成</button>`);
+ document.querySelectorAll('[data-dm]').forEach(c=>c.onchange=()=>{d.hide[c.dataset.dm]=!c.checked;save()});
+ const mv=(i,j)=>{if(j<0||j>=d.order.length)return;[d.order[i],d.order[j]]=[d.order[j],d.order[i]];save();dashSheet()};
+ document.querySelectorAll('[data-up]').forEach(b=>b.onclick=()=>mv(+b.dataset.up,+b.dataset.up-1));
+ document.querySelectorAll('[data-dn]').forEach(b=>b.onclick=()=>mv(+b.dataset.dn,+b.dataset.dn+1));
+ document.querySelectorAll('[data-ds]').forEach(c=>c.onchange=()=>{const ids=[...document.querySelectorAll('[data-ds]')].filter(x=>x.checked).map(x=>+x.dataset.ds);d.items=ids.length==S.items.length?null:ids;save()});
+ $('dz').onclick=()=>{close();renderDash()}}
+$('dEdit').onclick=dashSheet;$('dGear').onclick=()=>$('more').onclick();
 go();loadNative().then(()=>{applyPrefs();go()});$('gear').onclick=$('more').onclick;
 </script></body></html>
